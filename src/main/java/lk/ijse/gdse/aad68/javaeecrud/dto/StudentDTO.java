@@ -1,4 +1,4 @@
-package lk.ijse.gdse.aad68.javaeecrud.controller;
+package lk.ijse.gdse.aad68.javaeecrud.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

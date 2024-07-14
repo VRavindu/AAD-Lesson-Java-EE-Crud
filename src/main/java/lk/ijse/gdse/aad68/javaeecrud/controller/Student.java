@@ -1,25 +1,26 @@
 package lk.ijse.gdse.aad68.javaeecrud.controller;
 
-import jakarta.json.Json;
-import jakarta.json.JsonArray;
-import jakarta.json.JsonObject;
-import jakarta.json.JsonReader;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lk.ijse.gdse.aad68.javaeecrud.dto.StudentDTO;
 import lk.ijse.gdse.aad68.javaeecrud.util.Util;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.UUID;
 
 @WebServlet(urlPatterns = "/student")
 public class Student extends HttpServlet {
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //GET Student
